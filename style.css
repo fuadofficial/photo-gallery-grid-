@@ -6,6 +6,7 @@
 
 body {
     margin: 0 50px;
+    font-family: sans-serif;
 }
 
 .container {
@@ -13,19 +14,46 @@ body {
     margin: auto;
 }
 header{
-    width: 100%;
+    border-radius: 4px;
     padding: 10px;
-    background-color: aquamarine;
+    background-color: rgb(13, 137, 95);
     margin: 20px 0;
+    text-align: center;
 }
-
+h2{
+    color: white;
+}
 img {
     width: 100%;
     height: 200px;
+    -webkit-filter: brightness(100%);
+}
+
+img:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+.wrapper .item1{
+    background-color: rgb(27, 139, 53);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+    color: white;
+}
+.wrapper .item1 h3{
+    font-size: 30px;
+}
+.wrapper .item1 p{
+    font-size: 14px;
+    margin-top: 15px;
 }
